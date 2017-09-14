@@ -333,7 +333,7 @@ $handler = new MockHandler([
   'body' => fopen('somefile.json')
 ]);
 $builder = ClientBuilder::create();
-$builder->setHosts(['somehost']);
+$builder->setHosts(['someHost:somePort']);
 $builder->setHandler($handler);
 $client = $builder->build();
 // Do a request and you'll get back the 'body' response above
